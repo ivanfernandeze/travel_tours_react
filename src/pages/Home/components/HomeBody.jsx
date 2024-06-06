@@ -3,6 +3,7 @@ import PackagesCard from "../sections/PackagesCard";
 import TripCard from "../sections/TripCard";
 import {  BsFacebook, BsGithub, BsInstagram } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const tripsCards = [
   {
@@ -41,6 +42,24 @@ const packageCards = [
 
 
 export default function HomeBody() {
+
+/*   const [index, setIndex] = useState(0);
+  const [haveNext, setHaveNext] = useState(true);
+  const [havePrev, setHavePrev] = useState(false);
+
+  const next = () => {
+    if (index < tripsCards.length - 1) {
+      setIndex(index + 1);
+    } 
+  };
+
+  const prev = () => {
+    if (index > 0) {
+      setIndex(index - 1);
+    }
+  };
+   */
+  
     return (
       <>
         <main className="bg-bg-color p-8 z-50">

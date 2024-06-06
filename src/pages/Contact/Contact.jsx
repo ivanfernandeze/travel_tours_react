@@ -3,7 +3,7 @@ import EncabezadoContac from "./Components/Encabezado";
 export default function Contact() {
   return (
     <>
-      <EncabezadoContac />
+      <EncabezadoContac />      
       <div className="text-white p-4 pt-10 sm:pt-10 md:pt-10 lg:pt-10 ">
         <section className="container mx-auto pb-4">
           <div className="text-center mb-10 py-10 border-dashed border-2 border-slate-300 border-r-0 border-l-0">

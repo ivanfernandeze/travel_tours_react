@@ -1,11 +1,11 @@
 import { motion } from "framer-motion"
-
+import Contact_Us from "../../../assets/contact_us.jpg"
 
 export default function EncabezadoContac() {
     return (
         <>
             <div className="relative w-full h-screen">
-                <img className="absolute w-full h-full object-cover" src="/src/assets/contact_us.jpg" alt="" />
+                <img className="absolute w-full h-full object-cover" src={Contact_Us} alt="" />
                 <motion.div className="z-10 mt-[300px] absolute px-14"
                   initial = "hidden"
                   whileInView="visible"  

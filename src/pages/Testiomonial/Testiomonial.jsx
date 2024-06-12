@@ -1,6 +1,17 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { Link } from "react-router-dom";
+
+import Epic1 from "../../assets/testimonios/epic1.jpg";
+import Epic2 from "../../assets/testimonios/epic2.jpg";
+import Epic3 from "../../assets/testimonios/epic3.jpg";
+import Epic4 from "../../assets/testimonios/epic4.jpg";
+
+import Test1 from "../../assets/testimonios/test1.jpg";
+import Test2 from "../../assets/testimonios/test2.jpg";
+import Test3 from "../../assets/testimonios/test.jpg";
+import Test4 from "../../assets/testimonios/test4.jpg";
+
 export default function Testimonial() {
   const features = [
     {
@@ -18,10 +29,10 @@ export default function Testimonial() {
   ];
 
   const images = [
-    "/src/assets/Testimonios/epic1.jpg",
-    "/src/assets/Testimonios/epic2.jpg",
-    "/src/assets/Testimonios/epic3.jpg",
-    "/src/assets/Testimonios/epic4.jpg",
+    Epic1,
+    Epic2,
+    Epic3,
+    Epic4,
   ];
 
   const stats = [
@@ -36,25 +47,25 @@ export default function Testimonial() {
       name: "Cheryl Vania",
       role: "Traveller",
       text: "Transforming dreams into reality—FunJourney crafts seamless adventures, turning every journey into unforgettable memories. #TravelJoy #ExploreWithEase",
-      image: "/src/assets/testimonios/test1.jpg",
+      image: Test1,
     },
     {
       name: "John Doe",
       role: "Explorer",
       text: "An amazing experience from start to finish. FunJourney truly knows how to create memorable trips. #AdventureTime #TravelMore",
-      image: "/src/assets/testimonios/test2.jpg",
+      image: Test2,
     },
     {
       name: "Jane Smith",
       role: "Adventurer",
       text: "I can't recommend FunJourney enough! Their attention to detail is unmatched. #BestTrips #SeeTheWorld",
-      image: "/src/assets/testimonios/test.jpg",
+      image: Test3,
     },
     {
       name: "Alice Brown",
       role: "Globetrotter",
       text: "FunJourney made my travel dreams come true! Every detail was perfect. #Wanderlust #TravelGoals",
-      image: "/src/assets/testimonios/test4.jpg",
+      image: Test4,
     },
   ];
 

@@ -4,20 +4,31 @@ import TripCard from "../sections/TripCard";
 import {  BsFacebook, BsGithub, BsInstagram } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import AVION from "../../../assets/avion.png";
+import Flecha from "../../../assets/flecha.png"
+import Camera from "../../../assets/camera.png"
+import Viajes from "../../../assets/viajes.jpg"
+import Bosque from "../../../assets/bosque.jpg"
+
+import Beach from "../../../assets/beach.jpg";
+import Lighthouse from "../../../assets/lighthouse.jpg";
+
+import Church from "../../../assets/church.jpg";
+import Saint from "../../../assets/saint.jpg";
 
 const tripsCards = [
   {
     title: "SHEKI DAY TRIP",
     description: "This is a truly unique journey deep into azerbaijan, where passing through it picturesque forest, enchanting mountains and historic landmarks. This is a truly unique journey deep into azerbaijan enchanting mountains and historic landmarks.",
     time: "8:00 AM - 8:00 PM",
-    img: "src/assets/beach.jpg",
+    img: Beach,
     price: "50 DOL"
   },
   {
     title: "SHEKI DAY TRIP",
     description: "This is a truly unique journey deep into azerbaijan This is a truly unique journey deep into azerbaijan, where passing through it picturesque forest, enchanting mountains and historic landmarks. enchanting mountains and historic landmarks.",
     time: "8:00 AM - 8:00 PM",
-    img: "src/assets/lighthouse2.jpg",
+    img: Lighthouse,
     price: "50 DOL"
   },
 ]
@@ -26,17 +37,17 @@ const packageCards = [
   {
     lugar: "SHEKI",
     tiempo: "4 regions in 2 days",
-    img: "src/assets/church.jpg"
+    img: Church
   },
   {
     lugar: "SHEKI",
     tiempo: "4 regions in 2 days",
-    img: "src/assets/saint.jpg"
+    img: Saint
   },
   {
     lugar: "SHEKI",
     tiempo: "4 regions in 2 days",
-    img: "src/assets/lighthouse.jpg"
+    img: Lighthouse
   }
 ]
 
@@ -78,7 +89,7 @@ export default function HomeBody() {
                     visible: {opacity: 1, x: 0}
                 }}
               >
-                <img src="src/assets/avion.png" alt="" className="absolute -top-4 -right-[30px] lg:-right-1/2 h-[100px]"/> 
+                <img src={AVION} alt="" className="absolute -top-4 -right-[30px] lg:-right-1/2 h-[100px]"/> 
                 <h1 className="text-5xl font-bold text-primary mb-5">DAY TRIPS</h1>
                 <p className="text-gray-600 w-[80%]">Be able dozens of sights of Azerbaijan in less than 24 hours</p>
               </motion.div>
@@ -113,7 +124,7 @@ export default function HomeBody() {
                   visible: {opacity: 1, x: 0}
               }}
             >
-              <img src="src/assets/flecha.png" alt="" className="absolute -top-[130%] left-[20%] h-[180px]"/> 
+              <img src={Flecha} alt="" className="absolute -top-[130%] left-[20%] h-[180px]"/> 
               <h1 className="text-5xl font-bold text-primary mb-5">PACKAGES</h1>
               <p className="text-gray-600 w-[50%] text-center">Enjoy the nature and history of Azerbaijan at an easy pace</p>
             </motion.div>
@@ -131,9 +142,9 @@ export default function HomeBody() {
           {/* ABOUT US */}
           <section className="flex flex-col lg:flex-row my-40 py-10 items-center gap-10 lg:gap-4 ">
               <div className="basis-1/2 flex justify-center relative">
-                <img src="src/assets/camera.png" alt="" className="absolute -top-[120px] h-[50%] left-0"/>
-                <img src="src/assets/flecha.png" alt="" className="absolute -bottom-20 h-[150px] left-0 hidden lg:block"/>
-                <img src="src/assets/viajes.jpg" alt="viajes locos" className="w-[65%] -rotate-6"/>
+                <img src={Camera} alt="" className="absolute -top-[120px] h-[50%] left-0"/>
+                <img src={Flecha} alt="" className="absolute -bottom-20 h-[150px] left-0 hidden lg:block"/>
+                <img src={Viajes} alt="viajes locos" className="w-[65%] -rotate-6"/>
               </div>
 
               <div className="text-gray-600 basis-1/2 text-md">
@@ -170,7 +181,7 @@ export default function HomeBody() {
         
         </main>
         {/* ABOUT US */}
-        <section className=" p-6 bg-cover bg-no-repeat" style={{backgroundImage: 'url(src/assets/bosque.jpg)'}}>
+        <section className=" p-6 bg-cover bg-no-repeat" style={{backgroundImage: `url(${Bosque})`}}>
           <div className="flex justify-center gap-28 items-center h-full text-white flex-wrap">
             <div className="flex items-center flex-col gap-4">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-12">

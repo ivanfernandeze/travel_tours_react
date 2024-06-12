@@ -1,4 +1,7 @@
 import EncabezadoContac from "./Components/Encabezado";
+import Group1 from "../../assets/Group 1171275317.png";
+import Group2 from "../../assets/Group 1171275318.png";
+import Group3 from "../../assets/Group 1171275321.png";
 
 export default function Contact() {
   return (
@@ -18,7 +21,7 @@ export default function Contact() {
             <div className="grid grid-cols-1 gap-4 lg:w-1/3 border-2 border-inherit p-8 rounded-lg">
               <div className="bg-slate-200 p-4 rounded-lg">
                 <div>
-                  <img src="/src/assets/Group 1171275317.png" alt="" />
+                  <img src={Group1} alt="" />
                 </div>
                 <div className="my-4 text-black">
                   <p>Numero de telefono:</p>
@@ -27,7 +30,7 @@ export default function Contact() {
               </div>
               <div className="bg-slate-200 p-4 rounded-lg">
                 <div>
-                  <img src="/src/assets/Group 1171275318.png" alt="" />
+                  <img src={Group2} alt="" />
                 </div>
                 <div className="my-4 text-black">
                   <p>Correo electrónico:</p>
@@ -36,7 +39,7 @@ export default function Contact() {
               </div>
               <div className="bg-slate-200 p-4 rounded-lg">
                 <div>
-                  <img src="/src/assets/Group 1171275321.png" alt="" />
+                  <img src={Group3} alt="" />
                 </div>
                 <div className="my-4 text-black">
                   <p>Ubicación:</p>

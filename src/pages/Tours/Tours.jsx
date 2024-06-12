@@ -1,30 +1,35 @@
 import { motion } from "framer-motion";
 
+import Alone from "../../assets/tours/alone.jpg";
+import Todoterreno from "../../assets/tours/todoterreno.jpg";
+import Senderismo from "../../assets/tours/senderismo.jpg";
+import Oceano from "../../assets/tours/oceano.jpg";
+import Playa from "../../assets/tours/playa.jpg"
 
 const tours = [
   {
     id: 1,
     title: "Alone with nature",
     price: 100,
-    image: "src/assets/tours/alone.jpg",
+    image: Alone,
   },
   {
     id: 2,
     title: "Jeep ride",
     price: 200,
-    image: "src/assets/tours/todoterreno.jpg"
+    image: Todoterreno
   },
   {
     id: 3,
     title: "Hiking tour",
     price: 150,
-    image: "src/assets/tours/senderismo.jpg"
+    image: Senderismo
   },
   {
     id: 4,
     title: "Corners of the island",
     price: 250,
-    image: "src/assets/tours/oceano.jpg"
+    image: Oceano
   }    
 ]
 
@@ -43,7 +48,7 @@ export default function Tours() {
           <button className="text-white bg-primary px-16 py-3 rounded-3xl border hover:bg-white hover:text-slate-900 hover:border-slate-900 transition">See All</button>
         </div>
       </section>
-      <section className="my-20 bg-cover bg-no-repeat h-[80svh] rounded-3xl flex items-end" style={{backgroundImage: `url(src/assets/tours/playa.jpg)`}}>
+      <section className="my-20 bg-cover bg-no-repeat h-[80svh] rounded-3xl flex items-end" style={{backgroundImage: `url(${Playa})`}}>
         <div className="text-white p-10 basis-[70%] lg:basis-[30%]">
           <h1 className="text-5xl font-semibold">Enjoy your travel</h1>
           <p className="mt-6">Discover the most unique and vibrant experiences the Azores have to offer</p>

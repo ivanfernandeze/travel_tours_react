@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ImgPrincipal from "../../../assets/principal2.jpg";
 
 
 
@@ -7,7 +8,7 @@ export default function HomeHeader() {
     <header className="relative w-full h-screen">
       <img
         className="absolute w-full h-full object-cover"
-        src="/src/assets/principal2.jpg"
+        src={ImgPrincipal}
         alt=""
       />
       <motion.div className="absolute bottom-1/3 pl-8 sm:bottom-1/3 w-full text-white px-14 sm:pl-12 md:pl-16"

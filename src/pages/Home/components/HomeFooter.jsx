@@ -1,10 +1,12 @@
+import Nepal from "../../../assets/nepal.jpg"
+
 export default function HomeFooter() {
   return (
     <section>
       <div className="relative w-auto h-96 ">
         <img
           className="absolute w-full h-full object-cover"
-          src="/src/assets/nepal.jpg"
+          src={Nepal}
           alt=""
         />
         <div className="absolute pl-8 pt-20 text-white  px-14 sm:pl-12 md:pl-16 sm:w-9/12 w-11/12 md:w-7/12 lg:w-5/12 xl:w-4/12 ">
